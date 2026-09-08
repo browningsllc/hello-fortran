@@ -1,0 +1,13 @@
+! File Name:  pi_input.txt
+! Purpose:    Input for the ex2 pi approximation program.
+!
+! One value per line, in order.  Everything from a '!' onward is a comment
+! and is removed before the file is read, so the program itself never has to
+! think about comments.
+midpoint     ! method: midpoint or leibniz
+999          ! number of panels (midpoint) or terms (leibniz)
+!
+! Since comments are supported we can store 
+! alternative settings in the input file:
+leibniz      ! method: midpoint or leibniz
+1000000      ! number of panels (midpoint) or terms (leibniz)

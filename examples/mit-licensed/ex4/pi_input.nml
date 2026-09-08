@@ -1,0 +1,16 @@
+! File Name:  pi_input.nml
+! Purpose:    Input for the ex4 pi approximation program.
+!
+! Every &pi_input group in this file is read and run in turn, and all of them
+! write into the one report file named below.  Names omitted from a later
+! group keep the value the previous group gave them -- which is why out_file
+! is set once, in the first group, and the second group inherits it.
+&pi_input
+  method   = 'midpoint'       ! 'midpoint' or 'leibniz'
+  n        = 289              ! panels (midpoint) or terms (leibniz)
+  out_file = 'pi_report.out'  ! one report for every case; overwritten each run
+/
+&pi_input
+  method   = 'leibniz'        ! 'midpoint' or 'leibniz'
+  n        = 1000000          ! panels (midpoint) or terms (leibniz)
+/

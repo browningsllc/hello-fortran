@@ -1,0 +1,13 @@
+! File Name:  pi_input.nml
+! Purpose:    Input for the ex3 pi approximation program.
+!
+! The group name must match the namelist declaration in the program.  Order
+! does not matter, and either name may be omitted to keep its default.
+&pi_input
+  method = 'midpoint'   ! 'midpoint' or 'leibniz'
+  n      = 999          ! panels (midpoint) or terms (leibniz)
+/
+&pi_input
+  method = 'leibniz'    ! 'midpoint' or 'leibniz'
+  n      = 1000000      ! panels (midpoint) or terms (leibniz)
+/
