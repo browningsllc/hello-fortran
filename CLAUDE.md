@@ -36,7 +36,7 @@ This repository is intentionally organized as a small, mixed-license code archiv
 
 ## Commit identity and remote
 
-- This repository publishes under the `browningsllc` organization and carries its own commit identity, separate from whatever global git configuration the machine holds. Commits must be authored as `Robert S. Browning <326474989+browningsllc71@users.noreply.github.com>`.
+- This repository publishes under the `browningsllc` organization and carries its own commit identity, separate from whatever global git configuration the machine holds. Commits must be authored as `browningsllc71 <326474989+browningsllc71@users.noreply.github.com>` — the account identity, deliberately not the maintainer's personal name, so commit metadata stays uniform with commits GitHub authors server-side when a PR is squashed or merged.
 - That identity is applied by a `gitdir` conditional include in `~/.gitconfig` scoped to this directory. It is enforced by configuration, not by memory: do not override `user.name` or `user.email` per commit, and never fall back to the global identity.
 - `origin` is `git@github-hello-fortran:browningsllc/hello-fortran.git`. The SSH host alias is bound to a write-scoped deploy key for this repository alone, so a push cannot be attributed to a personal account and cannot reach any other repository. Do not add an `https://` remote or push over one.
 - Example source enters this repository only by direct edit or by copying files in. It never arrives by merging, cherry-picking, rebasing, or pushing history from another repository: imported history carries that repository's commit metadata into this one permanently, and that cannot be undone once published.
